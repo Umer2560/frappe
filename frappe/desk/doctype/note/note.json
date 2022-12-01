@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2013-05-24 13:41:00",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "public",
+  "notify_on_login",
+  "notify_on_every_login",
+  "expire_notification_on",
+  "content",
+  "seen_by_section",
+  "seen_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Title",
+   "no_copy": 1,
+   "print_hide": 1,
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "fieldname": "public",
+   "fieldtype": "Check",
+   "label": "Public",
+   "print_hide": 1
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "depends_on": "public",
+   "fieldname": "notify_on_login",
+   "fieldtype": "Check",
+   "label": "Notify users with a popup when they log in"
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "depends_on": "notify_on_login",
+   "description": "If enabled, users will be notified every time they login. If not enabled, users will only be notified once.",
+   "fieldname": "notify_on_every_login",
+   "fieldtype": "Check",
+   "label": "Notify Users On Every Login"
+  },
+  {
+   "depends_on": "eval:doc.notify_on_login && doc.public",
+   "fieldname": "expire_notification_on",
+   "fieldtype": "Date",
+   "label": "Expire Notification On",
+   "search_index": 1
+  },
+  {
+   "bold": 1,
+   "description": "Help: To link to another record in the system, use \"/app/note/[Note Name]\" as the Link URL. (don't use \"http://\")",
+   "fieldname": "content",
+   "fieldtype": "Text Editor",
+   "in_global_search": 1,
+   "label": "Content"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "seen_by_section",
+   "fieldtype": "Section Break",
+   "label": "Seen By"
+  },
+  {
+   "fieldname": "seen_by",
+   "fieldtype": "Table",
+   "label": "Seen By Table",
+   "options": "Note Seen By"
+  }
+ ],
+ "icon": "fa fa-file-text",
+ "idx": 1,
+ "links": [],
+ "modified": "2021-09-18 10:57:51.352643",
+ "modified_by": "Administrator",
+ "module": "Desk",
+ "name": "Note",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "track_changes": 1
+}

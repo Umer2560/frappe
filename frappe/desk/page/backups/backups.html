@@ -1,0 +1,20 @@
+<!-- jinja -->
+<div class="row download-backups">
+	{% for f in files %}
+	<div class="col-lg-3 col-md-4 col-12">
+		<a href="{{ f[0] }}" target="_blank" rel="noopener noreferrer" class="frappe-card download-backup-card">
+			<div>
+				{{ f[1] }}
+			</div>
+			<div class="mt-2">
+				<svg class="icon-sm" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+					stroke="var(--icon-stroke)">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+						d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+				</svg>
+				{{ f[2] }}
+			</div>
+		</a>
+	</div>
+	{% endfor %}
+</div>

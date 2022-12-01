@@ -1,0 +1,513 @@
+
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CYSWWG0B0R"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-CYSWWG0B0R');
+	</script>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+ 
+
+<style>
+	body {
+		overflow-y: hidden !important;
+		font-family: 'Roboto', sans-serif;
+		background: #fff;
+		
+	}
+
+	.form-signin {
+		width: 50% !important;
+		padding: 0 !important;
+	}
+
+	.background-image {
+		background-image: url('/assets/img/rus-bg.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 100% 70%; 
+		color: #fff;
+		position: relative;
+		height: 100vh;
+		margin-right: -15px;
+	}
+
+	.forgot-image {
+		background-image: url('/assets/img/rus-bg.jpg');
+		/* background-color: #1CABE2; */
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position:100%;
+		color: #fff;
+		position: relative;
+		height: 100vh;
+	}
+
+	.description {
+		position: absolute;
+		top: 44px;
+		max-width: 809px;
+		left: 65px;
+		color: #fff;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 25px;
+	}
+
+	.description span {
+		color: #fff;
+		font-size: 40px;
+		font-weight: 700;
+		font-family: PT Sans, sans-serif;
+		display: block;
+		line-height: 35px;
+	}
+
+	.login-section {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.logo-head {
+		align-items: center;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.logo-head img {
+		border-right: unset !important;
+		padding-right: 0px !important;
+		margin-bottom: 10px;
+		height: 130px !important;
+	}
+
+	.logo-head h3 {
+		font-size: 36px;
+		margin: 0;
+		padding: 0 2px 0px 7px;
+		display: inline-block;
+		text-transform: uppercase;
+		vertical-align: middle;
+		color: #1eabe3;
+	}
+
+	.logo-head p {
+		max-width: 92px;
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: 500;
+		margin: 19px 0 0 0;
+		padding: 0;
+		vertical-align: middle;
+		display: inline-block;
+		color: #000;
+	}
+
+	.forgot-password-message {
+		text-align: center !important;
+		margin-top: 18px !important;
+		font-size: 14px !important;
+	}
+	
+	.forget__icon.fa-eye {
+		color: #718096 !important;
+		position: absolute !important;
+		right: 13px !important;
+		top: 29px !important;
+	}
+
+	.login__field {
+		padding: 0px 0 20px 0px !important;
+		position: relative !important;
+	}
+
+	.login__icon {
+		color: #338041 !important;
+		font-size: 14px !important;
+		border-right: 1px solid #e2e8f0 !important;
+		padding-right: 12px !important;
+		position: relative !important;
+		top: 29px !important;
+		right: -9px !important;
+
+	}
+
+	.login__input {
+		padding: 10px 10px 10px 45px !important;
+		font-weight: 700 !important;
+		width: 100% !important;
+		font-size: 15px !important;
+		border: 1px solid #d9d9d9 !important;
+		border-radius: 4px !important;
+		font-weight: 400 !important;
+	}
+
+	.login__input:active,
+	.login__input:focus,
+	.login__input:hover {
+		outline: none !important;
+		border: 1px solid #40a9ff !important;
+	}
+
+	.login-copyright {
+		position: absolute;
+		right: 30px !important;
+		bottom: 6px !important;
+		color: #fff !important;
+		font-size: 13px !important;
+	}
+
+	.login__submit {
+		width: 100% !important;
+		height: 48px !important;
+		font-weight: 600 !important;
+		text-transform: uppercase !important;
+		font-size: 15px !important;
+		line-height: 40px !important;
+		margin-top: 0px !important;
+		color: #fff !important;
+		background-color: #338041 !important;
+		border-color: #338041 !important;
+		box-shadow: none !important;
+		display: block !important;
+		border-radius: 2px !important;
+		padding: 0px !important;
+		border:none;
+	}
+
+	.login__submit:active,
+	.login__submit:focus,
+	.login__submit:hover {
+		border-color: #02421D !important;
+		outline: none !important;
+	}
+
+	.button__icon {
+		font-size: 14px !important;
+		margin-left: auto !important;
+		color: #ffffff !important;
+		display: none !important;
+	}
+
+	.for-forgot {
+		padding: 0px !important;
+	}
+
+	.social-login {
+		position: relative !important;
+		height: unset !important;
+	}
+
+	.sign-up-message {
+		margin: 10px 0px;
+		text-align: center;
+	}
+	.web-footer{
+	display:none;}
+	@media screen and (max-width: 480px) {
+		body {
+
+			position: relative;
+			height: 100%;
+			overflow: hidden !important;
+
+		}
+
+		.login-container {
+			/* display: block !important
+		; */
+		}
+
+		.login-left.bg-white {
+			display: none;
+		}
+
+		.login {
+			width: 358px !important;
+			padding: 92px 30px 0px !important;
+		}
+
+		.screen {
+			width: 351px !important;
+			height: 545px !important;
+		}
+
+		#page-login {
+			overflow-x: hidden;
+		}
+
+		.page-card-body {
+			margin-top: 6px;
+		}
+
+		.login-container {
+			padding: 0px !important;
+			height: 100% !important;
+			min-height: 0px !important;
+			position: fixed;
+			align-items: unset !important;
+			right: 0;
+			left: 0;
+			top: 20px !important;
+		}
+
+		.for-forgot {
+
+			padding: 2px !important;
+			width: 351px !important;
+			margin: 0 auto;
+		}
+
+		.screen__content input {
+			margin-bottom: 0px;
+		}
+
+		.for-forgot .page-card {
+			padding: 80px 40px;
+		}
+
+		.sign-up-message {
+			text-align: end !important;
+		}
+	}
+
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+		select,
+		textarea,
+		input {
+			font-size: 16px;
+		}
+	}
+</style>
+{% extends "templates/web.html" %}
+
+
+
+{% macro email_login_body() -%}
+<div class="page-card-body">
+	<div class="login__field">
+		<i class="login__icon fas fa-user"></i>
+
+		<input type="text" id="login_email" class="login__input"
+			placeholder="{% if login_name_placeholder %}{{ login_name_placeholder  }}{% else %}{{ _('Username') }}{% endif %}"
+			required autofocus>
+	</div>
+	<div class="login__field">
+		<i class="login__icon fas fa-lock"></i>
+		<input type="password" id="login_password" class="login__input" placeholder="Password"
+			autocomplete="current-password" required>
+		<span toggle="#login_password" class="toggle-password text-muted"> <i
+				class="forget__icon fas fa-eye"></i></span>
+	</div>
+
+
+	<button class="button login__submit" type="submit"><span class="button__text">{{ _("Login") }}</span><i
+			class="button__icon fas fa-chevron-right"></i></button>
+
+	{% if ldap_settings and ldap_settings.enabled %}
+	<button class="btn btn-sm btn-default btn-block btn-login btn-ldap-login">
+		{{ _("Login with LDAP") }}</button>
+	{% endif %}
+
+	<p class="forgot-password-message">
+		<a href="#forgot">{{ _("Forgot Password?") }}</a>
+	</p>
+
+</div>
+
+{% endmacro %}
+
+{% block head_include %}
+<link type="text/css" rel="stylesheet" href="/assets/css/login.css?ver=-{{ build_version }}">
+{% endblock %}
+
+{% macro logo_section() %}
+<div class="page-card-head">
+	<img class="app-logo" src="/assets/frappe/images/erp-icon.svg">
+	<h4>{{ _('Login to XpertERP') }}</h4>
+</div>
+{% endmacro %}
+
+{% block page_content %}
+<!-- {{ for_test }} -->
+<div>
+	<noscript>
+		<div class="text-center my-5">
+			<h4>{{ _("Javascript is disabled on your browser") }}</h4>
+			<p class="text-muted">
+				{{ ("You need to enable JavaScript for your app to work.") }}<br>{{ ("To enable it follow the
+				instructions in the following link: {0}").format("<a
+					href='https://enable-javascript.com/'>enable-javascript.com</a></p>") }}
+		</div>
+	</noscript>
+
+
+	<div class="row">
+		<div class="col-md-4">
+			<div class="login-section">
+				<div class=" logo-head">
+					<img src="/assets/img/gbdlogo.png" alt="logo" />
+					<!-- <h3>UNICEF</h3>
+					<p>Sindh</p> -->
+				</div>
+
+				<form class="form-signin form-login login" role="form">
+					{%- if social_login -%}
+					<div class="social-logins text-center">
+						<div class="social-login-buttons">
+							{% for provider in provider_logins %}
+							<div class="login-button-wrapper">
+								<a href="{{ provider.auth_url }}"
+									class="btn btn-block btn-default btn-sm btn-login-option btn-{{ provider.name }}">
+									{% if provider.icon %}
+									{{ provider.icon }}
+									{% endif %}
+									{{ _("Login With {0}").format(provider.provider_name) }}</a>
+							</div>
+							{% endfor %}
+							<p class="text-muted login-divider">{{ _("or") }}</p>
+						</div>
+					</div>
+					<a href="#email" class="btn btn-block btn-default btn-sm btn-login-option">
+						{{ _("Login With Email") }}</a>
+
+					{% else %}
+					{{ email_login_body() }}
+					{%- endif -%}
+
+
+				</form>
+			</div>
+
+		</div>
+
+		<div class="col-md-8 ">
+			<div class="background-image">
+				<!-- <h5 class="description">
+					<span class="d-block">UNICEF</span>
+					Integrated Programme Dashboard
+
+				</h5> -->
+				<p class="login-copyright"> 2022 All Rights Reserved.</p>
+			</div>
+		</div>
+	</div>
+
+
+	{%- if social_login -%}
+	<section class='for-email-login'>
+		<div class="login-content page-card">
+			{{ logo_section() }}
+			<form class="form-signin form-login" role="form">
+				{{ email_login_body() }}
+			</form>
+		</div>
+		{%- if not disable_signup -%}
+		<div class="text-center sign-up-message">
+			{{ _("Don't have an account?") }}
+			<a href="#signup">{{ _("Sign up") }}</a>
+		</div>
+		{%- endif -%}
+	</section>
+	{%- endif -%}
+	<section class='for-signup {{ "signup-disabled" if disable_signup else "" }}'>
+		<div class="login-content page-card">
+			{{ logo_section() }}
+			{%- if not disable_signup -%}
+			<form class="form-signin form-signup hide" role="form">
+				<div class="page-card-body">
+					<div class="form-group">
+						<label class="form-label sr-only" for="signup_fullname">Full Name</label>
+						<input type="text" id="signup_fullname" class="form-control"
+							placeholder="{{ _('Umer Farooq') }}" required autofocus>
+					</div>
+					<div class="form-group">
+						<label class="form-label sr-only" for="signup_email">Email</label>
+						<input type="email" id="signup_email" class="form-control"
+							placeholder="{{ _('umer@example.com') }}" required>
+					</div>
+				</div>
+				<div class="page-card-actions">
+					<button class="btn btn-sm btn-primary btn-block btn-signup" type="submit">{{ _("Sign up")
+						}}</button>
+
+					<p class="text-center sign-up-message">
+						<a href="#login" class="blue">{{ _("Have an account? Login") }}</a>
+					</p>
+				</div>
+			</form>
+			{%- else -%}
+			<div class='page-card-head'>
+				<span class='indicator gray'>{{_("Signup Disabled")}}</span>
+			</div>
+			<p>{{_("Signups have been disabled for this website.")}}</p>
+			<div><a href='/' class='btn btn-primary btn-sm'>{{ _("Home") }}</a></div>
+			{%- endif -%}
+		</div>
+
+	</section>
+
+	<section class='for-forgot'>
+		<div class="row ">
+			<div class="col-md-4">
+				<div class="login-section">
+					<form class="form-signin form-forgot login-section hide" role="form">
+						<div class=" logo-head">
+							<img src="/assets/img/gbdlogo.png" alt="logo" />
+							<!-- <h3>UNICEF</h3>
+					<p>Sindh</p> -->
+						</div>
+						<div class="page-card-body">
+							<div class="login__field">
+								<i class="login__icon fas fa-envelope"></i>
+								<input type="email" id="forgot_email" class="login__input"
+									placeholder="{{ _('Email Address') }}" required="">
+							</div>
+							<button class="button login__submit btn-forgot" type="submit">{{ _("Reset Password") }}
+								<i class="button__icon fas fa-chevron-right"></i></button>
+							<p class=" sign-up-message">
+								<a href="#login">{{ _("Back to Login") }}</a>
+								<!--<a href="#login">{{ _("Don't Have Account") }}> </a>-->
+							</p>
+						</div>
+					</form>
+				</div>
+
+			</div>
+			<div class="col-md-8 px-0">
+				<div class="forgot-image">
+					<h5 class="description">
+						<!-- <span class="d-block">UNICEF</span>
+						Integrated Programme Dashboard -->
+
+					</h5> 
+					<p class="login-copyright"> 2022 All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+</div>
+{% endblock %}
+
+{% block script %}
+<script>{% include "templates/includes/login/login.js" %}
+	$('.container').addClass('container-fluid').removeClass('container my-4');
+	$('.navbar').hide();
+</script>
+{% endblock %}
+
+{% block sidebar %}{% endblock %}
